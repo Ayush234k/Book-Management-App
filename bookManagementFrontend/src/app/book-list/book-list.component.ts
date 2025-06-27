@@ -18,8 +18,8 @@ export class BookListComponent {
     this.books$ = store.pipe(select('book'));
   }
 
-  addBook(bookId: string, bookName: string, bookPrice: number, bookAuthor: string){
-    this.store.dispatch(AddBook({bookId, bookName, bookPrice, bookAuthor}));
+  addBook(bookId: string, bookName: string,  bookAuthor: string, bookPrice: number){
+    this.store.dispatch(AddBook({bookId, bookName, bookAuthor, bookPrice}));
   }
 
   removeBook(bookId: string){
