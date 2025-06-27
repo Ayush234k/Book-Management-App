@@ -15,5 +15,5 @@ public class book {
     public String bookId;
     public String bookName;
     public int bookPrice;
-    public String bookDesc;
+    public String bookAuthor;
 }
